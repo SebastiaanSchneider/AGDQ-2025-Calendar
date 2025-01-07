@@ -1,5 +1,5 @@
 """
-Gets JSON of SGDQ event schedule, transforms it into iCal format calendar.
+Gets JSON of AGDQ 2025 event schedule, transforms it into iCal format calendar.
 """
 from datetime import datetime, timedelta
 import requests
@@ -33,7 +33,7 @@ def generate_calendar():
     cal = Calendar()
 
     # Basic components for iCal format
-    cal.add('prodid', '-//SGDQ Calendar//https://gamesdonequick.com/api/schedule/48//')
+    cal.add('prodid', '-//AGDQ 2025 Calendar//https://gamesdonequick.com/api/schedule/52//')
     cal.add('version', '2.0')
 
     end_datetime = 0
